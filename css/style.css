@@ -26,7 +26,7 @@ header nav .search {
     margin: 0;
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 header nav .search input {
