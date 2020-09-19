@@ -40,3 +40,4 @@ const videos = [
     thumbnail: "https://img.youtube.com/vi/RmpuhbdnAfQ/maxresdefault.jpg",
   },
 ];
+
