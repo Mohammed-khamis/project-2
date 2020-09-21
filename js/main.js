@@ -2,6 +2,8 @@ const ul = $(`.aside ul`);
 
 const videoTitle = $(`.main p`);
 
+const iframe = $(`.main iframe`);
+
 videoTitle.text(`${videos[0].title}`);
 
 videos.forEach ((video, index) => {
@@ -16,5 +18,4 @@ videos.forEach ((video, index) => {
         videoTitle.text(`${video.title}`);
     })
 });
-
 
