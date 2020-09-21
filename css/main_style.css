@@ -1,0 +1,60 @@
+.body-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+}
+
+.main, .aside {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.main {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    align-items: center;
+}
+
+.aside {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside ul li a {
+    margin: 0 15px 15px 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.aside ul li a:hover { 
+    text-decoration: underline;
+}
+
+.aside ul li a p {
+    align-self: flex-start;
+    margin:0 10px;
+    flex-wrap: wrap;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.aside ul li a img {
+    width: 60%;
+    height: 80%;
+}
