@@ -14,6 +14,7 @@ videos.forEach ((video, index) => {
     ul.append(li);
     li.click( () => {
         videoTitle.text(`${video.title}`);
+        li.hide();
     })
 });
 
