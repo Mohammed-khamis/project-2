@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- iframe to embed the video -->
-    <!-- the video id must be changed to a real video id in order to show the video -->
-    <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <nav class="nav-parent">
+        <div class="nav-child1"><img src="../images/logo.png" alt="youtube logo"></div>
+        <div class="nav-child2">
+            <input type="text" name="search" class="search">
+            <button><img src="../images/search.jpg" alt="search" class="button"></button>
+        </div>
+        <div class="nav-child3"></div>
+    </nav>
+    
+    <div class="main">
+        <!-- iframe to embed the video -->
+        <!-- the video id must be changed to a real video id in order to show the video -->
+        <!-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <div class="aside"></div>
+    <script src="../js/data.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

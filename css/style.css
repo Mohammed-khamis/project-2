@@ -1,64 +1,27 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: rgb(24, 24, 24);
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-header {
+.nav-parent {
+    display: flex;
+    flex-direction: row;
     background-color: rgb(32, 32, 32);
     width: 100%;
     height: 60px;
-    display: flex;
-    flex-direction: row;
 }
 
-header nav {
-    width: 100%;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 300px;
+.nav-child1, .nav-child2, .nav-child3 {
+    border: 1px solid black;
+    flex-basis: 35%;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
-header nav .search {
-    align-self: center;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-}
-
-header nav .search input {
-    width: 300px;
-    height: 15px;
-    background-color: rgb(24, 24, 24);
-    border-width: 1px 0 1px 1px;
-    border-style: solid;
-    border-color: #cccccc48 ;
-    padding: 5px 10px;
-}
-
-header nav .search input:focus {
-    background-color: white;
-    border-width: 1px 0 1px 1px;
-    border-style: solid;
-    border-color: #cccccc48 ;
-    padding: 5px 10px;
-    width: 300px;
-    height: 15px;
-}
-
-header nav .search button {
-    width: 50px;
-    height: 27px;
-    background-image: url("../images/search.jpg");
-    border: 1px solid #cccccc48;
-    background-size: cover;
-}
-
-header nav img {
-    margin-left: 70px;
-    margin-top: 1px;
-    align-self: flex-start;
-}
