@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin: 30px;
+    margin: 40px;
 }
 
 .main, .aside {
@@ -45,7 +45,7 @@
 }
 
 .aside ul li a {
-    margin: 0 15px 15px 0;
+    margin: 0 15px 20px 0;
     padding: 0;
     text-decoration: none;
     color: white;
