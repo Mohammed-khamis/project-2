@@ -1,7 +1,9 @@
+
 .body-parent {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     margin: 30px;
 }
 
@@ -18,16 +20,20 @@
     align-items: center;
 }
 
+.main iframe {
+    align-self: start;
+    width: 95%;
+}
+
 .main p {
     align-self: start;
     font-size: 150%;
-    margin-left: 35px;
 }
 
 .aside {
     flex-basis: 25%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -61,6 +67,26 @@
 }
 
 .aside ul li a img {
-    width: 40%;
-    height: 50%;
+    width: 200px;
+    height: 110px;
+}
+
+
+@media (max-width: 1200px) {
+    .body-parent {
+        flex-wrap: wrap;
+    }
+
+    .aside {
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 30px;
+    }
+
+    .main {
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
 }
