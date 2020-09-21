@@ -1,9 +1,10 @@
 const ul = $(`.aside ul`);
 
-const main = $(`.main`);
+const videoTitle = $(`.main p`);
 
+videoTitle.text(`${videos[0].title}`);
 
-videos.forEach ( (video, index) => {
+videos.forEach ((video, index) => {
     const li = $(`<li class=li${index}J>
                     <a href=https://www.youtube.com/embed/${video.id} target=iframe>
                         <img src=${video.thumbnail}>
@@ -11,4 +12,8 @@ videos.forEach ( (video, index) => {
                     </a>
                 </li>`);
     ul.append(li);
+    li.click( () => {
+        videoTitle.text(`${video.title}`);
+    })
 });
+
